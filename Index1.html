@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es-EN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/7a35659e45.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <form action="" id="formulario">
+        <div class="center">
+            <img src="https://www.isend.com.br/wp-content/uploads/2014/11/isend_blog_logo.png" />
+            <h1>Formulario de Donaciones</h1>
+        </div>
+
+
+
+        <div class="form-group">
+            <div class="input-group is-invalid">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="pais">País</label>
+                </div>
+                <select class="custom-select" id="pais">
+                    <option value="" selected="selected">Seleccione una opcion...</option>
+                    <option value="republicaDominicana">Republica Dominicana</option>
+                    <option value="cuba">Cuba</option>
+                    <option value="panama">Panama</option>
+                    <option value="estadosUnidos">Estados Unidos </option>
+                    <option value="canada">Canada</option>
+                  </select>
+            </div>
+        </div>
+
+        <div class="form-group icono">
+            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
+            <i class="fas fa-user-circle"></i>
+        </div>
+        <div class="form-group icono">
+            <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido">
+            <i class="fas fa-users"></i>
+        </div>
+
+        <div class="form-group icono">
+            <input type="text" class="form-control" id="numeroTarjeta" placeholder="Numero de la tarjeta">
+            <i class="fas fa-credit-card"></i>
+        </div>
+
+
+        <div class="container input-group" id="tarjetaMarca">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="tarjetaMarca">Tipo de tarjeta</label>
+            </div>
+            <label class="form-check form-check-inline master">
+                <input type="radio" name="tarjetaMarca" value="visa" id="visa">
+                <span class="checkmark visa1"></span>
+              </label>
+            <label class="form-check form-check-inline master">
+                <input type="radio" name="tarjetaMarca" value="mastercard" id="mastercard">
+                <span class="checkmark mastercard1"></span>
+              </label>
+        </div>
+
+        <div class="row mesano">
+            <div class=" col-sm">
+                <input type="text" class="form-control col-5" id="mes" name="mes" placeholder="mm">
+
+            </div>
+            <div class=" col-sm slash">
+                <p>/</p>
+            </div>
+            <div class=" col-sm año">
+                <input type="text" class="form-control col-5 " id="año" name="año" placeholder="aa">
+            </div>
+        </div>
+
+        <div class="row cvvrow">
+            <div class="form-group col cvv">
+                <input type="text" class="form-control " id="csc" name="csc" placeholder="csc o cvv">
+            </div>
+            <div class="form-group col left">
+                <a target="_blank" href="https://es.wikipedia.org/wiki/C%C3%B3digo_de_seguridad_de_tarjetas_de_cr%C3%A9dito">¿Que es esto?</a>
+            </div>
+        </div>
+
+        <div class="form-group icono">
+            <input type="text" class="form-control" id="direccion1" name="direccion" placeholder="Direccion de facturacion 1">
+            <i class="fas fa-map-marked-alt"></i>
+        </div>
+
+        <div class="form-group icono">
+            <input type="text" class="form-control" id="direccion2" name="direccion" placeholder="(opcional) Direccion de facturacion 2">
+            <i class="fas fa-map-marked-alt"></i>
+        </div>
+
+        <div class="form-group icono">
+            <input type="text" class="form-control" id="codigoPostal" name="codigoPostal" placeholder="Codigo postal">
+            <i class="fas fa-shipping-fast"></i>
+        </div>
+
+        <div class="form-group icono">
+            <input type="text" class="form-control" id="ciudad" name="ciudad" placeholder="Ciudad">
+            <i class="fas fa-city"></i>
+        </div>
+
+        <div class="form-group">
+            <div class="input-group is-invalid">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="provincia">Provincia</label>
+                </div>
+                <select class="custom-select" id="provincia">
+                        <option value="">Seleccione una opcion...</option>
+                        <option value="1">Provincia 1</option>
+                        <option value="2">Provincia 2</option>
+                        <option value="3">Provincia 3</option>
+                        <option value="4">Provincia 4</option>
+                        <option value="5">Provincia 5</option>
+                      </select>
+            </div>
+        </div>
+        <div class="form-group icono">
+            <input type="text" class="form-control" id="telefono" name="telefono" placeholder="telefono">
+            <i class="fas fa-phone-square-alt"></i>
+        </div>
+
+        <div class="form-group icono">
+            <input type="email" class="form-control" id="correo" name="correo" placeholder="Correo">
+            <i class="fas fa-envelope"></i>
+        </div>
+        <div class="center">
+            <input class="btn btn-primary" id="enviar" type="submit" value="Revisar Donacion y continuar">
+        </div>
+    </form>
+
+
+</body>
+
+</html>
